@@ -33,7 +33,7 @@
 
 - Lalu membuat nano topologi.sh
 **Topologi UML**
-'''
+```
 # Switch
 uml_switch -unix switch1 > /dev/null < /dev/null &
 uml_switch -unix switch2 > /dev/null < /dev/null &
@@ -76,4 +76,4 @@ xterm -T NGANJUK -e linux ubd0=NGANJUK,jarkom umid=NGANJUK eth0=daemon,,,switch2
 xterm -T TULUNGAGUNG -e linux ubd0=TULUNGAGUNG,jarkom umid=TULUNGAGUNG eth0=daemon,,,switch20 mem=64M &
 xterm -T LUMAJANG -e linux ubd0=LUMAJANG,jarkom umid=LUMAJANG eth0=daemon,,,switch17 mem=64M &
 
-'''
+```
