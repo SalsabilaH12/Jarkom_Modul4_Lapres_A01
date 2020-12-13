@@ -32,6 +32,7 @@
 ![Alt Text](/img/hasilcidr.png)
 
 - Lalu membuat nano topologi.sh
+
 **Topologi UML**
 ```
 # Switch
@@ -75,5 +76,41 @@ xterm -T JOMBANG -e linux ubd0=JOMBANG,jarkom umid=JOMBANG eth0=daemon,,,switch2
 xterm -T NGANJUK -e linux ubd0=NGANJUK,jarkom umid=NGANJUK eth0=daemon,,,switch21 mem=64M &
 xterm -T TULUNGAGUNG -e linux ubd0=TULUNGAGUNG,jarkom umid=TULUNGAGUNG eth0=daemon,,,switch20 mem=64M &
 xterm -T LUMAJANG -e linux ubd0=LUMAJANG,jarkom umid=LUMAJANG eth0=daemon,,,switch17 mem=64M &
+
+```
+
+- Melakukan setting file dengan /etc/network/interfaces untuk setiap UML
+
+**Interface UML**
+Surabaya (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.72.8.10
+netmask 255.255.255.252
+gateway 10.151.72.9
+
+auto eth1
+iface eth1 inet static
+address 192.168.64.1
+netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+address 192.168.192.1
+netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+address 192.168.32.1
+netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+address 10.151.73.17
+netmask 255.255.255.252
 
 ```
