@@ -82,6 +82,7 @@ xterm -T LUMAJANG -e linux ubd0=LUMAJANG,jarkom umid=LUMAJANG eth0=daemon,,,swit
 - Melakukan setting file dengan /etc/network/interfaces untuk setiap UML
 
 **Interface UML**
+
 Surabaya (Router)
 ```
 auto lo
@@ -113,4 +114,284 @@ iface eth4 inet static
 address 10.151.73.17
 netmask 255.255.255.252
 
+```
+
+Pasuruan (Router) 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.192.2
+netmask 255.255.255.252
+gateway 192.168.192.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.144.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.168.160.1
+netmask 255.255.252.0
+
+```
+
+Probolinggo (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.144.2
+netmask 255.255.255.252
+gateway 192.168.144.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.136.1
+netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+address 192.168.128.1
+netmask 255.255.248.0
+
+```
+
+Batu (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.32.2
+netmask 255.255.255.252
+gateway 192.168.32.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.8.1
+netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+address 192.168.20.1
+netmask 255.255.252.0
+
+auto eth3
+iface eth3 inet static
+address 192.168.16.1
+netmask 255.255.254.0
+
+```
+
+Kediri (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.8.2
+netmask 255.255.255.252
+gateway 192.168.8.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.4.1
+netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+address 10.151.73.21
+netmask 255.255.255.252
+
+```
+
+Madiun (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.16.2
+netmask 255.255.254.0
+gateway 192.168.16.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.18.1
+netmask 255.255.255.240
+
+```
+
+Blitar (Router)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.4.2
+netmask 255.255.255.0
+gateway 192.168.4.1
+
+auto eth1
+iface eth1 inet static
+address 192.168.0.1
+netmask 255.255.252.0
+
+```
+
+Mojokerto (Server)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.73.18
+netmask 255.255.255.252
+gateway 10.151.73.17
+
+```
+
+Malang (Server)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 10.151.73.22
+netmask 255.255.255.252
+gateway 10.151.73.21
+```
+
+Sampang (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.64.2
+netmask 255.255.252.0
+gateway 192.168.64.1
+
+```
+
+Sidoarjo (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.160.2
+netmask 255.255.252.0
+gateway 192.168.160.1
+
+```
+
+Jember (klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.128.2
+netmask 255.255.248.0
+gateway 192.168.128.1
+```
+
+Banyuwangi (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.128.3
+netmask 255.255.248.0
+gateway 192.168.128.1
+```
+
+Bondowoso (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.136.2
+netmask 255.255.255.128
+gateway 192.168.136.1
+```
+
+Jombang (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.16.3
+netmask 255.255.254.0
+gateway 192.168.16.1
+```
+
+Bonjonegoro (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.18.2
+netmask 255.255.255.240
+gateway 192.168.18.1
+```
+
+Nganjuk (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.20.2
+netmask 255.255.252.0
+gateway 192.168.20.1
+```
+
+Lumajang (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.4.3
+netmask 255.255.255.0
+gateway 192.168.4.1
+```
+
+Tulungagung (Klien)
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+address 192.168.0.2
+netmask 255.255.252.0
+gateway 192.168.0.1
 ```
