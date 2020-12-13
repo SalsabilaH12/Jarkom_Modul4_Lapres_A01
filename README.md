@@ -395,3 +395,61 @@ address 192.168.0.2
 netmask 255.255.252.0
 gateway 192.168.0.1
 ```
+
+- Melakukan Routing
+
+**Routing**
+```
+Surabaya : D1, D2, Malang
+Pasuruan : B2, Default
+Probolinggo : Default
+Batu : A12, B1, Malang, Default
+Madiun : Default
+Kediri : A11, Mojokerto, Default
+Blitar : Default
+```
+
+- Membuat file nano route.sh
+
+**Routing di Surabaya**
+```
+route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
+route add -net 192.168.0.0 netmask 255.255.224.0 gw 192.168.32.2
+route add -net 10.151.73.20 netmask 255.255.255.252 gw 192.168.32.2
+```
+
+**Routing di Pasuruan**
+```
+route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.192.1
+```
+**Routing di Probolinggo**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.144.1
+```
+
+**Routing di Batu**
+```
+route add -net 192.168.18.0 netmask 255.255.255.240 gw 192.168.16.2
+route add -net 192.168.0.0 netmask 255.255.248.0 gw 192.168.8.2
+route add -net 10.151.73.20 netmask 255.255.255.252 gw 192.168.8.2
+route add -net 0.0.0.0 netmask 0.0.0.0 gw  192.168.32.1
+```
+
+**Routing di Madiun**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw  192.168.16.1
+```
+
+**Routing di Kediri**
+```
+route add -net 192.168.0.0 netmask 255.255.252.0 gw  192.168.4.2
+route add -net 10.151.73.16 netmask 255.255.255.252 gw 192.168.8.1
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.8.1
+```
+
+
+**Routing di Blitar**
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.4.1
+```
