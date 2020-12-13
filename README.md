@@ -456,3 +456,4 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.4.1
 ```
 
 - Untuk menjalankannya, menggunakan perintah source route.sh
+
