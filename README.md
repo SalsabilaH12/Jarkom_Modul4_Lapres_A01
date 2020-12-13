@@ -6,3 +6,4 @@
 
 ## VLSM
 **Menentukan Subnet**
+![Alt Text](/img/Subnet.png)
