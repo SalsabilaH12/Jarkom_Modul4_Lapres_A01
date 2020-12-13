@@ -8,8 +8,8 @@
 **Menentukan Subnet**
 ![Alt Text](/img/Subnet.png)
 
-**menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan. **
-![Alt Text](/img/Hasil subnetting.png)
+**menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.**
+![Alt Text](/img/hasilsubnetting.png)
 
 **Menghitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon seperti gambar di bawah**
-![Alt Text](/img/tree vlsm.png)
+![Alt Text](/img/treevlsm.png)
