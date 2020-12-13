@@ -32,8 +32,9 @@
 ![Alt Text](/img/hasilcidr.png)
 
 - Lalu membuat nano topologi.sh
-
+ 
 **Topologi UML**
+
 ```
 # Switch
 uml_switch -unix switch1 > /dev/null < /dev/null &
